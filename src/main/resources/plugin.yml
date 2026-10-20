@@ -1,0 +1,19 @@
+name: MATARIFParkour
+version: 1.0.0
+main: com.matarif.parkour.MatarifParkour
+api-version: '1.21'
+authors: [MATARIF]
+description: Timed parkour courses with ordered checkpoints and persistent leaderboards.
+commands:
+  parkour:
+    description: Configure parkour courses and view course leaderboards.
+    aliases: [pk]
+    usage: /parkour <create|setstart|setfinish|addcheckpoint|setfaily|leaderboard>
+permissions:
+  matarifparkour.admin:
+    description: Create and configure parkour courses.
+    default: op
+  matarifparkour.leaderboard:
+    description: View parkour course leaderboards.
+    default: true
+
